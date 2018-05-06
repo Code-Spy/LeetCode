@@ -70,6 +70,7 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
 
 //-----------------------------------------------------------------//
 // the function of O(log(m+n))
+// reffer to solution : https://leetcode.com/problems/median-of-two-sorted-arrays/solution/
 double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
 	if (nums2Size == 0 && nums1Size == 0) return 0;
 	if (nums1Size > nums2Size)   return findMedianSortedArrays(nums2, nums2Size, nums1, nums1Size);
